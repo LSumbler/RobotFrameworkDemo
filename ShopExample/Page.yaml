@@ -1,0 +1,13 @@
+---
+loginPage:
+  usernameInput: id=user-name
+  passwordInput: id=password
+  loginButton: id=login-button
+
+shopPage:
+  addBackpackButton: id=add-to-cart-sauce-labs-backpack
+  shoppingCartLink: class=shopping_cart_link
+
+cartPage:
+  cartContents: id=cart_contents_container
+  firstCartContentItemName: css=.cart_item .inventory_item_name
