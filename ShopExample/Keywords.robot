@@ -3,11 +3,15 @@
 Library  SeleniumLibrary
 Variables   Page.yaml
 
+*** Variables ***
+${URL}    https://www.saucedemo.com/
+${BROWSER}    Chrome
+
 *** Keywords ***
 
 I am logged in as
     [Arguments]     ${username}     ${password}
-    Open Browser  https://www.saucedemo.com/  Chrome
+    Open Browser    ${URL}    ${BROWSER}
     Wait Until Element Is Visible   ${loginPage.usernameInput}
     Input Text  ${loginPage.usernameInput}  ${username}
     Input Password  ${loginPage.passwordInput}  ${password}
